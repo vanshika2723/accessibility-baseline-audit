@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Accessible enterprise dashboard built with semantic HTML5"
+  >
+
+  <title>Enterprise Accessibility Dashboard</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Skip Navigation -->
+  <a class="skip-link" href="#main-content">
+    Skip to main content
+  </a>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+
+    <div class="brand">
+      <a href="index.html" aria-label="Enterprise Dashboard home">
+        Enterprise Dashboard
+      </a>
+    </div>
+
+    <!-- Primary Navigation -->
+    <nav aria-label="Primary navigation">
+
+      <ul class="primary-navigation">
+
+        <li>
+          <a href="#dashboard" aria-current="page">
+            Dashboard
+          </a>
+        </li>
+
+        <li>
+          <a href="#reports">
+            Reports
+          </a>
+        </li>
+
+        <li>
+          <a href="#settings">
+            Settings
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+    <!-- User Navigation -->
+    <nav aria-label="User navigation">
+
+      <ul class="user-navigation">
+
+        <li>
+          <a href="#profile">
+            Profile
+          </a>
+        </li>
+
+        <li>
+          <button
+            type="button"
+            id="logout-button"
+            aria-label="Log out of your account"
+          >
+            Logout
+          </button>
+        </li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+
+  <!-- ================= PAGE LAYOUT ================= -->
+  <div class="page-layout">
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar">
+
+      <nav aria-label="Sidebar navigation">
+
+        <h2>Menu</h2>
+
+        <ul>
+
+          <li>
+            <a href="#dashboard" aria-current="page">
+              Dashboard
+            </a>
+          </li>
+
+          <li>
+            <a href="#users">
+              Users
+            </a>
+          </li>
+
+          <li>
+            <a href="#reports">
+              Reports
+            </a>
+          </li>
+
+          <li>
+            <a href="#settings">
+              Settings
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main id="main-content">
+
+      <!-- Dashboard Section -->
+      <section id="dashboard" aria-labelledby="dashboard-title">
+
+        <header class="section-header">
+
+          <p class="eyebrow">
+            Enterprise Overview
+          </p>
+
+          <h1 id="dashboard-title">
+            Dashboard
+          </h1>
+
+          <p>
+            Monitor users, reports, and system activity from one
+            accessible dashboard.
+          </p>
+
+        </header>
+
+
+        <!-- ================= SUMMARY CARDS ================= -->
+        <section
+          class="dashboard-summary"
+          aria-labelledby="summary-title"
+        >
+
+          <h2 id="summary-title">
+            Dashboard summary
+          </h2>
+
+
+          <div class="card-grid">
+
+            <article class="dashboard-card">
+
+              <h3>Total Users</h3>
+
+              <p class="card-value">
+                1,248
+              </p>
+
+              <p>
+                Registered users
+              </p>
+
+            </article>
+
+
+            <article class="dashboard-card">
+
+              <h3>Active Users</h3>
+
+              <p class="card-value">
+                982
+              </p>
+
+              <p>
+                Currently active
+              </p>
+
+            </article>
+
+
+            <article class="dashboard-card">
+
+              <h3>Reports</h3>
+
+              <p class="card-value">
+                86
+              </p>
+
+              <p>
+                Reports generated
+              </p>
+
+            </article>
+
+
+            <article class="dashboard-card">
+
+              <h3>System Status</h3>
+
+              <p class="card-value">
+                Healthy
+              </p>
+
+              <p>
+                All systems operational
+              </p>
+
+            </article>
+
+          </div>
+
+        </section>
+
+
+        <!-- ================= USERS TABLE ================= -->
+        <section
+          id="users"
+          aria-labelledby="users-title"
+        >
+
+          <header class="section-header">
+
+            <h2 id="users-title">
+              Recent users
+            </h2>
+
+            <p>
+              A list of recently registered dashboard users.
+            </p>
+
+          </header>
+
+
+          <div class="table-wrapper">
+
+            <table>
+
+              <caption>
+                Recently registered users and their account status
+              </caption>
+
+              <thead>
+
+                <tr>
+
+                  <th scope="col">
+                    Name
+                  </th>
+
+                  <th scope="col">
+                    Email
+                  </th>
+
+                  <th scope="col">
+                    Role
+                  </th>
+
+                  <th scope="col">
+                    Status
+                  </th>
+
+                  <th scope="col">
+                    Actions
+                  </th>
+
+                </tr>
+
+              </thead>
+
+
+              <tbody>
+
+                <tr>
+
+                  <th scope="row">
+                    Ananya Sharma
+                  </th>
+
+                  <td>
+                    ananya@example.com
+                  </td>
+
+                  <td>
+                    Administrator
+                  </td>
+
+                  <td>
+                    <span class="status status-active">
+                      Active
+                    </span>
+                  </td>
+
+                  <td>
+
+                    <button
+                      type="button"
+                      class="view-user-button"
+                      data-user="Ananya Sharma"
+                      aria-label="View details for Ananya Sharma"
+                    >
+                      View
+                    </button>
+
+                  </td>
+
+                </tr>
+
+
+                <tr>
+
+                  <th scope="row">
+                    Rahul Mehta
+                  </th>
+
+                  <td>
+                    rahul@example.com
+                  </td>
+
+                  <td>
+                    Manager
+                  </td>
+
+                  <td>
+                    <span class="status status-active">
+                      Active
+                    </span>
+                  </td>
+
+                  <td>
+
+                    <button
+                      type="button"
+                      class="view-user-button"
+                      data-user="Rahul Mehta"
+                      aria-label="View details for Rahul Mehta"
+                    >
+                      View
+                    </button>
+
+                  </td>
+
+                </tr>
+
+
+                <tr>
+
+                  <th scope="row">
+                    Priya Singh
+                  </th>
+
+                  <td>
+                    priya@example.com
+                  </td>
+
+                  <td>
+                    Employee
+                  </td>
+
+                  <td>
+                    <span class="status status-inactive">
+                      Inactive
+                    </span>
+                  </td>
+
+                  <td>
+
+                    <button
+                      type="button"
+                      class="view-user-button"
+                      data-user="Priya Singh"
+                      aria-label="View details for Priya Singh"
+                    >
+                      View
+                    </button>
+
+                  </td>
+
+                </tr>
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+        </section>
+
+
+        <!-- ================= FORM ================= -->
+        <section
+          id="settings"
+          aria-labelledby="settings-title"
+        >
+
+          <header class="section-header">
+
+            <h2 id="settings-title">
+              Account settings
+            </h2>
+
+            <p>
+              Update your account information.
+            </p>
+
+          </header>
+
+
+          <form id="account-form" novalidate>
+
+            <fieldset>
+
+              <legend>
+                Personal information
+              </legend>
+
+
+              <div class="form-group">
+
+                <label for="full-name">
+                  Full name
+                </label>
+
+                <input
+                  type="text"
+                  id="full-name"
+                  name="fullName"
+                  autocomplete="name"
+                  required
+                  minlength="2"
+                  aria-describedby="name-help"
+                >
+
+                <small id="name-help">
+                  Enter your first and last name.
+                </small>
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="email">
+                  Email address
+                </label>
+
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                  aria-describedby="email-help"
+                >
+
+                <small id="email-help">
+                  Enter a valid email address.
+                </small>
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label for="role">
+                  Account role
+                </label>
+
+                <select
+                  id="role"
+                  name="role"
+                  required
+                >
+
+                  <option value="">
+                    Select a role
+                  </option>
+
+                  <option value="administrator">
+                    Administrator
+                  </option>
+
+                  <option value="manager">
+                    Manager
+                  </option>
+
+                  <option value="employee">
+                    Employee
+                  </option>
+
+                </select>
+
+              </div>
+
+            </fieldset>
+
+
+            <fieldset>
+
+              <legend>
+                Notification preferences
+              </legend>
+
+
+              <div class="checkbox-group">
+
+                <input
+                  type="checkbox"
+                  id="email-notifications"
+                  name="emailNotifications"
+                >
+
+                <label for="email-notifications">
+                  Receive email notifications
+                </label>
+
+              </div>
+
+
+              <div class="checkbox-group">
+
+                <input
+                  type="checkbox"
+                  id="security-alerts"
+                  name="securityAlerts"
+                  checked
+                >
+
+                <label for="security-alerts">
+                  Receive security alerts
+                </label>
+
+              </div>
+
+            </fieldset>
+
+
+            <button
+              type="submit"
+              class="primary-button"
+            >
+              Save settings
+            </button>
+
+            <p
+              id="form-message"
+              class="form-message"
+              role="status"
+              aria-live="polite"
+            ></p>
+
+          </form>
+
+        </section>
+
+      </section>
+
+    </main>
+
+  </div>
+
+
+  <!-- ================= MODAL ================= -->
+  <dialog
+    id="user-modal"
+    aria-labelledby="modal-title"
+  >
+
+    <div class="modal-content">
+
+      <header>
+
+        <h2 id="modal-title">
+          User details
+        </h2>
+
+      </header>
+
+
+      <div id="modal-body">
+
+        <p>
+          User information will appear here.
+        </p>
+
+      </div>
+
+
+      <footer>
+
+        <button
+          type="button"
+          id="close-modal"
+        >
+          Close
+        </button>
+
+      </footer>
+
+    </div>
+
+  </dialog>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+
+    <p>
+      &copy; 2026 Enterprise Dashboard.
+      Built with semantic HTML5 and accessibility in mind.
+    </p>
+
+    <nav aria-label="Footer navigation">
+
+      <ul>
+
+        <li>
+          <a href="#privacy">
+            Privacy
+          </a>
+        </li>
+
+        <li>
+          <a href="#accessibility">
+            Accessibility
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
