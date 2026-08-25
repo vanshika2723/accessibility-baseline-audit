@@ -48,7 +48,42 @@ accessibility-baseline-repository/
 ├── package.json
 └── README.md
 ```
+                    ┌──────────────────────┐
+                    │        User          │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │       Client         │
+                    │   React + Vite       │
+                    │                      │
+                    │ UI / Interaction     │
+                    │ Accessibility        │
+                    └──────────┬───────────┘
+                               │
+                         HTTP / REST
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │       Server         │
+                    │   Node.js API       │
+                    │                      │
+                    │ Data Access          │
+                    │ API Contract         │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │    Audit Evidence    │
+                    │                      │
+                    │ CSV / Documentation  │
+                    └──────────────────────┘
 
+                    ┌──────────────────────┐
+                    │       Tests          │
+                    │ Accessibility Smoke  │
+                    │ API Contract Checks  │
+                    └──────────────────────┘
 ## Local setup
 
 ```bash
