@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
 
   <meta
@@ -15,32 +17,59 @@
 
   <title>Enterprise Accessibility Dashboard</title>
 
-  <link rel="stylesheet" href="styles.css">
+  <link
+    rel="stylesheet"
+    href="styles.css"
+  >
+
 </head>
+
 
 <body>
 
-  <!-- Skip Navigation -->
-  <a class="skip-link" href="#main-content">
+
+  <!-- =====================================================
+       SKIP NAVIGATION
+  ====================================================== -->
+
+  <a
+    class="skip-link"
+    href="#main-content"
+  >
     Skip to main content
   </a>
 
-  <!-- ================= HEADER ================= -->
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
   <header class="site-header">
 
+
     <div class="brand">
-      <a href="index.html" aria-label="Enterprise Dashboard home">
+
+      <a
+        href="index.html"
+        aria-label="Enterprise Dashboard home"
+      >
         Enterprise Dashboard
       </a>
+
     </div>
 
+
     <!-- Primary Navigation -->
+
     <nav aria-label="Primary navigation">
 
       <ul class="primary-navigation">
 
         <li>
-          <a href="#dashboard" aria-current="page">
+          <a
+            href="#dashboard"
+            aria-current="page"
+          >
             Dashboard
           </a>
         </li>
@@ -61,7 +90,9 @@
 
     </nav>
 
+
     <!-- User Navigation -->
+
     <nav aria-label="User navigation">
 
       <ul class="user-navigation">
@@ -73,6 +104,7 @@
         </li>
 
         <li>
+
           <button
             type="button"
             id="logout-button"
@@ -80,29 +112,46 @@
           >
             Logout
           </button>
+
         </li>
 
       </ul>
 
     </nav>
 
+
   </header>
 
 
-  <!-- ================= PAGE LAYOUT ================= -->
+
+  <!-- =====================================================
+       PAGE LAYOUT
+  ====================================================== -->
+
   <div class="page-layout">
 
-    <!-- ================= SIDEBAR ================= -->
+
+    <!-- ===================================================
+         SIDEBAR
+    ==================================================== -->
+
     <aside class="sidebar">
+
 
       <nav aria-label="Sidebar navigation">
 
-        <h2>Menu</h2>
+        <h2>
+          Menu
+        </h2>
+
 
         <ul>
 
           <li>
-            <a href="#dashboard" aria-current="page">
+            <a
+              href="#dashboard"
+              aria-current="page"
+            >
               Dashboard
             </a>
           </li>
@@ -110,6 +159,12 @@
           <li>
             <a href="#users">
               Users
+            </a>
+          </li>
+
+          <li>
+            <a href="#products">
+              Products
             </a>
           </li>
 
@@ -127,40 +182,63 @@
 
         </ul>
 
+
       </nav>
+
 
     </aside>
 
 
-    <!-- ================= MAIN CONTENT ================= -->
+
+    <!-- ===================================================
+         MAIN CONTENT
+    ==================================================== -->
+
     <main id="main-content">
 
-      <!-- Dashboard Section -->
-      <section id="dashboard" aria-labelledby="dashboard-title">
+
+      <!-- =================================================
+           DASHBOARD
+      ================================================== -->
+
+      <section
+        id="dashboard"
+        aria-labelledby="dashboard-title"
+      >
+
 
         <header class="section-header">
+
 
           <p class="eyebrow">
             Enterprise Overview
           </p>
 
+
           <h1 id="dashboard-title">
             Dashboard
           </h1>
 
+
           <p>
-            Monitor users, reports, and system activity from one
-            accessible dashboard.
+            Monitor users, reports, products, and system
+            activity from one accessible dashboard.
           </p>
+
 
         </header>
 
 
-        <!-- ================= SUMMARY CARDS ================= -->
+
+        <!-- =================================================
+             SUMMARY CARDS
+        ================================================== -->
+
         <section
           class="dashboard-summary"
           aria-labelledby="summary-title"
         >
+
 
           <h2 id="summary-title">
             Dashboard summary
@@ -169,9 +247,12 @@
 
           <div class="card-grid">
 
+
             <article class="dashboard-card">
 
-              <h3>Total Users</h3>
+              <h3>
+                Total Users
+              </h3>
 
               <p class="card-value">
                 1,248
@@ -184,9 +265,12 @@
             </article>
 
 
+
             <article class="dashboard-card">
 
-              <h3>Active Users</h3>
+              <h3>
+                Active Users
+              </h3>
 
               <p class="card-value">
                 982
@@ -199,9 +283,12 @@
             </article>
 
 
+
             <article class="dashboard-card">
 
-              <h3>Reports</h3>
+              <h3>
+                Reports
+              </h3>
 
               <p class="card-value">
                 86
@@ -214,9 +301,12 @@
             </article>
 
 
+
             <article class="dashboard-card">
 
-              <h3>System Status</h3>
+              <h3>
+                System Status
+              </h3>
 
               <p class="card-value">
                 Healthy
@@ -228,16 +318,23 @@
 
             </article>
 
+
           </div>
+
 
         </section>
 
 
-        <!-- ================= USERS TABLE ================= -->
+
+        <!-- =================================================
+             USERS TABLE
+        ================================================== -->
+
         <section
           id="users"
           aria-labelledby="users-title"
         >
+
 
           <header class="section-header">
 
@@ -252,13 +349,17 @@
           </header>
 
 
+
           <div class="table-wrapper">
 
+
             <table>
+
 
               <caption>
                 Recently registered users and their account status
               </caption>
+
 
               <thead>
 
@@ -291,6 +392,7 @@
 
               <tbody>
 
+
                 <tr>
 
                   <th scope="row">
@@ -306,9 +408,11 @@
                   </td>
 
                   <td>
+
                     <span class="status status-active">
                       Active
                     </span>
+
                   </td>
 
                   <td>
@@ -327,6 +431,7 @@
                 </tr>
 
 
+
                 <tr>
 
                   <th scope="row">
@@ -342,9 +447,11 @@
                   </td>
 
                   <td>
+
                     <span class="status status-active">
                       Active
                     </span>
+
                   </td>
 
                   <td>
@@ -363,6 +470,7 @@
                 </tr>
 
 
+
                 <tr>
 
                   <th scope="row">
@@ -378,9 +486,11 @@
                   </td>
 
                   <td>
+
                     <span class="status status-inactive">
                       Inactive
                     </span>
+
                   </td>
 
                   <td>
@@ -398,20 +508,29 @@
 
                 </tr>
 
+
               </tbody>
+
 
             </table>
 
+
           </div>
+
 
         </section>
 
 
-        <!-- ================= FORM ================= -->
+
+        <!-- =================================================
+             ACCOUNT SETTINGS
+        ================================================== -->
+
         <section
           id="settings"
           aria-labelledby="settings-title"
         >
+
 
           <header class="section-header">
 
@@ -426,9 +545,15 @@
           </header>
 
 
-          <form id="account-form" novalidate>
+
+          <form
+            id="account-form"
+            novalidate
+          >
+
 
             <fieldset>
+
 
               <legend>
                 Personal information
@@ -437,9 +562,11 @@
 
               <div class="form-group">
 
+
                 <label for="full-name">
                   Full name
                 </label>
+
 
                 <input
                   type="text"
@@ -451,18 +578,23 @@
                   aria-describedby="name-help"
                 >
 
+
                 <small id="name-help">
                   Enter your first and last name.
                 </small>
 
+
               </div>
+
 
 
               <div class="form-group">
 
+
                 <label for="email">
                   Email address
                 </label>
+
 
                 <input
                   type="email"
@@ -473,18 +605,23 @@
                   aria-describedby="email-help"
                 >
 
+
                 <small id="email-help">
                   Enter a valid email address.
                 </small>
 
+
               </div>
+
 
 
               <div class="form-group">
 
+
                 <label for="role">
                   Account role
                 </label>
+
 
                 <select
                   id="role"
@@ -510,12 +647,16 @@
 
                 </select>
 
+
               </div>
+
 
             </fieldset>
 
 
+
             <fieldset>
+
 
               <legend>
                 Notification preferences
@@ -524,20 +665,25 @@
 
               <div class="checkbox-group">
 
+
                 <input
                   type="checkbox"
                   id="email-notifications"
                   name="emailNotifications"
                 >
 
+
                 <label for="email-notifications">
                   Receive email notifications
                 </label>
 
+
               </div>
 
 
+
               <div class="checkbox-group">
+
 
                 <input
                   type="checkbox"
@@ -546,13 +692,17 @@
                   checked
                 >
 
+
                 <label for="security-alerts">
                   Receive security alerts
                 </label>
 
+
               </div>
 
+
             </fieldset>
+
 
 
             <button
@@ -562,6 +712,7 @@
               Save settings
             </button>
 
+
             <p
               id="form-message"
               class="form-message"
@@ -569,226 +720,330 @@
               aria-live="polite"
             ></p>
 
+
           </form>
+
 
         </section>
 
+
       </section>
-      <!-- ================= DYNAMIC PRODUCTS ================= -->
-<section
-  id="products"
-  aria-labelledby="products-title"
->
-
-  <header class="section-header">
-
-    <p class="eyebrow">
-      Live REST API
-    </p>
-
-    <h2 id="products-title">
-      Product Explorer
-    </h2>
-
-    <p>
-      Search, filter, and sort products loaded
-      from a public REST API.
-    </p>
-
-  </header>
 
 
-  <!-- ================= CART STATUS ================= -->
 
-  <aside
-    class="cart-status"
-    aria-label="Shopping cart status"
-  >
+      <!-- =================================================
+           PRODUCTS
+      ================================================== -->
 
-    <strong>
-      Cart items:
-      <span id="cart-count">0</span>
-    </strong>
-
-    <span
-      id="cart-message"
-      role="status"
-      aria-live="polite"
-    ></span>
-
-  </aside>
-
-
-  <!-- ================= SEARCH + SORT ================= -->
-
-  <div class="product-controls">
-
-    <div class="search-control">
-
-      <label for="product-search">
-        Search products
-      </label>
-
-      <input
-        type="search"
-        id="product-search"
-        name="productSearch"
-        placeholder="Search by product name..."
-        autocomplete="off"
-        aria-describedby="search-help"
+      <section
+        id="products"
+        aria-labelledby="products-title"
       >
 
-      <small id="search-help">
-        Results update automatically as you type.
-      </small>
 
-    </div>
+        <!-- Product Header -->
 
-
-    <div class="sort-control">
-
-      <label for="sort-products">
-        Sort products
-      </label>
-
-      <select
-        id="sort-products"
-        name="sortProducts"
-      >
-
-        <option value="default">
-          Default order
-        </option>
-
-        <option value="price-low">
-          Price: Low to High
-        </option>
-
-        <option value="price-high">
-          Price: High to Low
-        </option>
-
-        <option value="name">
-          Name: A to Z
-        </option>
-
-      </select>
-
-    </div>
-
-  </div>
+        <header class="section-header">
 
 
-  <!-- ================= CATEGORY TABS ================= -->
-
-  <nav
-    class="category-navigation"
-    aria-label="Product categories"
-  >
-
-    <div
-      id="category-tabs"
-      class="category-tabs"
-    >
-      <!-- Categories generated by JavaScript -->
-    </div>
-
-  </nav>
+          <p class="eyebrow">
+            Live REST API
+          </p>
 
 
-  <!-- ================= ERROR BANNER ================= -->
-
-  <div
-    id="error-banner"
-    class="error-banner"
-    role="alert"
-    hidden
-  >
-
-    <strong>
-      Something went wrong
-    </strong>
-
-    <p id="error-message">
-      Unable to load products.
-    </p>
-
-  </div>
+          <h2 id="products-title">
+            Product Explorer
+          </h2>
 
 
-  <!-- ================= LOADING SKELETON ================= -->
-
-  <div
-    id="loading-state"
-    class="loading-grid"
-    aria-live="polite"
-    aria-label="Loading products"
-  >
-
-    <article class="skeleton-card">
-      <div class="skeleton-image"></div>
-
-      <div class="skeleton-line"></div>
-      <div class="skeleton-line short"></div>
-      <div class="skeleton-button"></div>
-    </article>
+          <p>
+            Search, filter, sort, and manage products
+            from a public REST API.
+          </p>
 
 
-    <article class="skeleton-card">
-      <div class="skeleton-image"></div>
-
-      <div class="skeleton-line"></div>
-      <div class="skeleton-line short"></div>
-      <div class="skeleton-button"></div>
-    </article>
+        </header>
 
 
-    <article class="skeleton-card">
-      <div class="skeleton-image"></div>
 
-      <div class="skeleton-line"></div>
-      <div class="skeleton-line short"></div>
-      <div class="skeleton-button"></div>
-    </article>
+        <!-- =================================================
+             ADD PRODUCT BUTTON
+        ================================================== -->
 
-
-    <article class="skeleton-card">
-      <div class="skeleton-image"></div>
-
-      <div class="skeleton-line"></div>
-      <div class="skeleton-line short"></div>
-      <div class="skeleton-button"></div>
-    </article>
-
-  </div>
+        <div class="product-admin-actions">
 
 
-  <!-- ================= PRODUCT GRID ================= -->
+          <button
+            type="button"
+            id="add-product-button"
+            class="primary-button"
+          >
+            + Add Product
+          </button>
 
-  <div
-    id="product-grid"
-    class="product-grid"
-    aria-live="polite"
-    aria-label="Product results"
-    hidden
-  >
-    <!-- Products generated by JavaScript -->
-  </div>
 
-</section>
+        </div>
+
+
+
+        <!-- =================================================
+             CART STATUS
+        ================================================== -->
+
+        <aside
+          class="cart-status"
+          aria-label="Shopping cart status"
+        >
+
+
+          <strong>
+            Cart items:
+            <span id="cart-count">
+              0
+            </span>
+          </strong>
+
+
+          <span
+            id="cart-message"
+            role="status"
+            aria-live="polite"
+          ></span>
+
+
+        </aside>
+
+
+
+        <!-- =================================================
+             SEARCH + SORT
+        ================================================== -->
+
+        <div class="product-controls">
+
+
+          <div class="search-control">
+
+
+            <label for="product-search">
+              Search products
+            </label>
+
+
+            <input
+              type="search"
+              id="product-search"
+              name="productSearch"
+              placeholder="Search by product name..."
+              autocomplete="off"
+              aria-describedby="search-help"
+            >
+
+
+            <small id="search-help">
+              Results update automatically as you type.
+            </small>
+
+
+          </div>
+
+
+
+          <div class="sort-control">
+
+
+            <label for="sort-products">
+              Sort products
+            </label>
+
+
+            <select
+              id="sort-products"
+              name="sortProducts"
+            >
+
+              <option value="default">
+                Default order
+              </option>
+
+              <option value="price-low">
+                Price: Low to High
+              </option>
+
+              <option value="price-high">
+                Price: High to Low
+              </option>
+
+              <option value="name">
+                Name: A to Z
+              </option>
+
+            </select>
+
+
+          </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             CATEGORY NAVIGATION
+        ================================================== -->
+
+        <nav
+          class="category-navigation"
+          aria-label="Product categories"
+        >
+
+
+          <div
+            id="category-tabs"
+            class="category-tabs"
+          >
+            <!-- Categories generated by JavaScript -->
+          </div>
+
+
+        </nav>
+
+
+
+        <!-- =================================================
+             ERROR BANNER
+        ================================================== -->
+
+        <div
+          id="error-banner"
+          class="error-banner"
+          role="alert"
+          hidden
+        >
+
+
+          <strong>
+            Something went wrong
+          </strong>
+
+
+          <p id="error-message">
+            Unable to load products.
+          </p>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             LOADING STATE
+        ================================================== -->
+
+        <div
+          id="loading-state"
+          class="loading-grid"
+          aria-live="polite"
+          aria-label="Loading products"
+        >
+
+
+          <article class="skeleton-card">
+
+            <div class="skeleton-image"></div>
+
+            <div class="skeleton-line"></div>
+
+            <div class="skeleton-line short"></div>
+
+            <div class="skeleton-button"></div>
+
+          </article>
+
+
+
+          <article class="skeleton-card">
+
+            <div class="skeleton-image"></div>
+
+            <div class="skeleton-line"></div>
+
+            <div class="skeleton-line short"></div>
+
+            <div class="skeleton-button"></div>
+
+          </article>
+
+
+
+          <article class="skeleton-card">
+
+            <div class="skeleton-image"></div>
+
+            <div class="skeleton-line"></div>
+
+            <div class="skeleton-line short"></div>
+
+            <div class="skeleton-button"></div>
+
+          </article>
+
+
+
+          <article class="skeleton-card">
+
+            <div class="skeleton-image"></div>
+
+            <div class="skeleton-line"></div>
+
+            <div class="skeleton-line short"></div>
+
+            <div class="skeleton-button"></div>
+
+          </article>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             PRODUCT GRID
+        ================================================== -->
+
+        <div
+          id="product-grid"
+          class="product-grid"
+          aria-live="polite"
+          aria-label="Product results"
+          hidden
+        >
+          <!-- Products generated by JavaScript -->
+        </div>
+
+
+      </section>
+
 
     </main>
 
+
   </div>
 
 
-  <!-- ================= MODAL ================= -->
+
+  <!-- =====================================================
+       USER DETAILS MODAL
+  ====================================================== -->
+
   <dialog
     id="user-modal"
     aria-labelledby="modal-title"
   >
 
+
     <div class="modal-content">
+
 
       <header>
 
@@ -819,22 +1074,271 @@
 
       </footer>
 
+
     </div>
+
 
   </dialog>
 
 
-  <!-- ================= FOOTER ================= -->
+
+  <!-- =====================================================
+       PRODUCT CRUD MODAL
+  ====================================================== -->
+
+  <dialog
+    id="product-modal"
+    class="product-modal"
+    aria-labelledby="product-modal-title"
+  >
+
+
+    <div class="modal-content">
+
+
+      <!-- Product Modal Header -->
+
+      <header class="modal-header">
+
+
+        <div>
+
+
+          <p class="eyebrow">
+            Product Management
+          </p>
+
+
+          <h2 id="product-modal-title">
+            Add Product
+          </h2>
+
+
+        </div>
+
+
+
+        <button
+          type="button"
+          id="close-product-modal"
+          class="modal-close"
+          aria-label="Close product form"
+        >
+          &times;
+        </button>
+
+
+      </header>
+
+
+
+      <!-- Product Form -->
+
+      <form
+        id="product-form"
+        class="product-form"
+      >
+
+
+        <!-- Hidden ID -->
+
+        <input
+          type="hidden"
+          id="product-id"
+          name="productId"
+        >
+
+
+
+        <!-- Product Name -->
+
+        <div class="form-group">
+
+
+          <label for="product-title">
+            Product Name
+          </label>
+
+
+          <input
+            type="text"
+            id="product-title"
+            name="productTitle"
+            required
+            minlength="3"
+            maxlength="120"
+            placeholder="Enter product name"
+          >
+
+
+        </div>
+
+
+
+        <!-- Price + Category -->
+
+        <div class="form-row">
+
+
+          <div class="form-group">
+
+
+            <label for="product-price">
+              Price
+            </label>
+
+
+            <input
+              type="number"
+              id="product-price"
+              name="productPrice"
+              required
+              min="0.01"
+              step="0.01"
+              placeholder="99.99"
+            >
+
+
+          </div>
+
+
+
+          <div class="form-group">
+
+
+            <label for="product-category">
+              Category
+            </label>
+
+
+            <input
+              type="text"
+              id="product-category"
+              name="productCategory"
+              required
+              minlength="2"
+              placeholder="electronics"
+            >
+
+
+          </div>
+
+
+        </div>
+
+
+
+        <!-- Image URL -->
+
+        <div class="form-group">
+
+
+          <label for="product-image">
+            Image URL
+          </label>
+
+
+          <input
+            type="url"
+            id="product-image"
+            name="productImage"
+            placeholder="https://example.com/image.jpg"
+          >
+
+
+        </div>
+
+
+
+        <!-- Description -->
+
+        <div class="form-group">
+
+
+          <label for="product-description">
+            Description
+          </label>
+
+
+          <textarea
+            id="product-description"
+            name="productDescription"
+            required
+            minlength="10"
+            maxlength="500"
+            rows="5"
+            placeholder="Enter product description"
+          ></textarea>
+
+
+        </div>
+
+
+
+        <!-- Form Message -->
+
+        <p
+          id="product-form-message"
+          class="form-message"
+          role="status"
+          aria-live="polite"
+        ></p>
+
+
+
+        <!-- Modal Actions -->
+
+        <footer class="modal-actions">
+
+
+          <button
+            type="button"
+            id="cancel-product-modal"
+            class="secondary-button"
+          >
+            Cancel
+          </button>
+
+
+          <button
+            type="submit"
+            class="primary-button"
+          >
+            Save Product
+          </button>
+
+
+        </footer>
+
+
+      </form>
+
+
+    </div>
+
+
+  </dialog>
+
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
   <footer class="site-footer">
+
 
     <p>
       &copy; 2026 Enterprise Dashboard.
       Built with semantic HTML5 and accessibility in mind.
     </p>
 
+
     <nav aria-label="Footer navigation">
 
+
       <ul>
+
 
         <li>
           <a href="#privacy">
@@ -842,21 +1346,34 @@
           </a>
         </li>
 
+
         <li>
           <a href="#accessibility">
             Accessibility
           </a>
         </li>
 
+
       </ul>
 
+
     </nav>
+
 
   </footer>
 
 
-  <!-- <script src="script.js"></script> -->
-   <script type="module" src="js/app.js"></script>
+
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
+
+  <script
+    type="module"
+    src="js/app.js"
+  ></script>
+
 
 </body>
+
 </html>

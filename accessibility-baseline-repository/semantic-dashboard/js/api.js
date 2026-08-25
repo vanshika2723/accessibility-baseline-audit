@@ -2,9 +2,6 @@
 
 const API_URL = "https://fakestoreapi.com/products";
 
-/**
- * Fetch all products from Fake Store API.
- */
 export async function fetchProducts() {
   const response = await fetch(API_URL);
 
